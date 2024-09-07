@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color:green;
+            height: 40px;
+            width: 80px;
+            border-radius: 10px;
+            margin: 10px;
+            color: white;
+        }
+        h1{
+            text-align: center;
+        }
+        #del{
+            background-color: red;
+        }
+        input{
+            height: 50px;
+            margin: 10px;
+        }
+        #headingcontainer{
+            display: grid;
+            grid-template-columns: 200px 150px 100px;
+            margin-left: 525px;
+            column-gap: 10px;
+            row-gap: 10px;
+            align-items: center;
+        }
+
+
+
+        .containerelement{
+            text-align: center;
+            display: grid;
+            grid-template-columns: 200px 150px 100px;
+        margin-left: 525px;
+        column-gap: 10px;
+        row-gap: 10px;
+        align-items: center;
+        }
+        span{
+            text-align: center;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <h1>To Do Application</h1>
+    <div id="headingcontainer"><input id="to-input" type="text" placeholder="Enter TODO here">
+        <input id="tododate" type="date">
+        <button onclick="ToDo(); date();">Add</button></div>
+<div class="containerelement"></div>
+<script src="ToDo.js"></script>
+</body>
+</html>
